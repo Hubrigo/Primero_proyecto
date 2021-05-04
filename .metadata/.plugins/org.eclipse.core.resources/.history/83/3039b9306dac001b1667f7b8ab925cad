@@ -1,0 +1,83 @@
+import java.util.Scanner;
+import java.util.Iterator;
+
+public class main {
+
+	public static void main(String[] args) {
+
+		
+	/*	int fila;
+		int contador;
+		int num = 1;
+		int valorsolo;
+		String cadenaena;
+		String variabletemporal;
+		int lugar;
+
+		do {
+
+			System.out.println("Que fila de los numeros que quieres ver: ");
+			Scanner sc = new Scanner(System.in);
+			fila = sc.nextInt();
+
+		} while (fila <= 0);
+
+		System.out.println("La fila " + fila + " de los numeros son: \n1 ");
+		fila--;
+		for (fila=0; fila > 0; fila--) {
+			variabletemporal = "";
+			cadenaena = Integer.toString(num);
+			
+			for (lugar = 0; lugar < cadenaena.length();) {
+				valorsolo = (cadenaena.charAt(lugar)) - 48;
+				contador = 0;
+				while (valorsolo  == (cadenaena.charAt(lugar)) - 48) {
+					lugar++;
+					contador++;
+					if (lugar >= cadenaena.length()) break;
+				}
+				variabletemporal = variabletemporal.concat(Integer.toString(contador) + Integer.toString(lugar));
+			}
+			System.out.println(variabletemporal);
+			num = Integer.parseInt(variabletemporal);
+		}
+*/
+		
+		int num = 1;
+        String cadena;
+        int fila;
+        int valorsolo;
+        int contador;
+        int lugar;
+        String Variabletemp;
+        do {
+            System.out.println("Cuantos nuemros desea ver");
+            Scanner a = new Scanner(System.in);
+            fila = a.nextInt();
+
+        } while (fila <= 0);
+        System.out.println("La fila es:\n1");
+        fila--;
+        for (; fila > 0; fila--) {
+            Variabletemp = "";
+            cadena = Integer.toString(num);
+            for (lugar = 0; lugar < cadena.length();) {
+                valorsolo = (cadena.charAt(lugar)) - 48;
+                contador = 0;
+                while (valorsolo == (cadena.charAt(lugar)) - 48) {
+                    lugar++;
+                    contador++;
+                    if (lugar >= cadena.length())
+                        break;
+                }
+                Variabletemp = Variabletemp.concat(Integer.toString(contador) + Integer.toString(valorsolo));
+            }
+            System.out.println(Variabletemp);
+            num = Integer.parseInt(Variabletemp);
+	}
+
+
+
+	}
+}
+

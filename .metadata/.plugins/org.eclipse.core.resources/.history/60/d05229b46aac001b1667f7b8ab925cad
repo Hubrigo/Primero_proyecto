@@ -1,0 +1,83 @@
+import java.util.Scanner;
+import java.util.Iterator;
+
+public class main {
+
+	public static void main(String[] args) {
+
+		
+	/*	int fila;
+		int contador;
+		int num = 1;
+		int valorsolo;
+		String cadena;
+		String variabletemporal;
+		int lugar;
+
+		do {
+
+			System.out.println("Que fila de los numeros que quieres ver: ");
+			Scanner sc = new Scanner(System.in);
+			fila = sc.nextInt();
+
+		} while (fila <= 0);
+
+		System.out.println("La fila " + fila + " de los numeros son: \n1 ");
+		fila--;
+		for (fila=0; fila > 0; fila--) {
+			variabletemporal = "";
+			cadena = Integer.toString(num);
+			
+			for (lugar = 0; lugar < cadena.length();) {
+				valorsolo = (cadena.charAt(lugar)) - 48;
+				contador = 0;
+				while (valorsolo  == (cadena.charAt(lugar)) - 48) {
+					lugar++;
+					contador++;
+					if (lugar >= cadena.length()) break;
+				}
+				variabletemporal = variabletemporal.concat(Integer.toString(contador) + Integer.toString(lugar));
+			}
+			System.out.println(variabletemporal);
+			num = Integer.parseInt(variabletemporal);
+		}
+*/
+		
+		int num = 1;
+        String cad;
+        int serie;
+        int dig;
+        int cant;
+        int pos;
+        String sig;
+        do {
+            System.out.println("Cuantos nuemros desea ver");
+            Scanner a = new Scanner(System.in);
+            serie = a.nextInt();
+
+        } while (serie <= 0);
+        System.out.println("La serie es:\n1");
+        serie--;
+        for (; serie > 0; serie--) {
+            sig = "";
+            cad = Integer.toString(num);
+            for (pos = 0; pos < cad.length();) {
+                dig = (cad.charAt(pos)) - 48;
+                cant = 0;
+                while (dig == (cad.charAt(pos)) - 48) {
+                    pos++;
+                    cant++;
+                    if (pos >= cad.length())
+                        break;
+                }
+                sig = sig.concat(Integer.toString(cant) + Integer.toString(dig));
+            }
+            System.out.println(sig);
+            num = Integer.parseInt(sig);
+	}
+
+
+
+	}
+}
+

@@ -1,0 +1,25 @@
+
+import java.util.*;
+
+public class main {	
+	
+	
+	public static void main(String[] args) {
+	
+		int lugar;
+		int contador=1;
+		String variabletexto[],variabletemporal;
+		
+		
+		do {
+			
+			System.out.println("Que file de los numeros de conway quieres ver: ");
+			Scanner sc=new Scanner (System.in);
+			lugar = sc.nextInt();
+			
+			
+		}while (lugar<=0);
+
+	}
+
+}

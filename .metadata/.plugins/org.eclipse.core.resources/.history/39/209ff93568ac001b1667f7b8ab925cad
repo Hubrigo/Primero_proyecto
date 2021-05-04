@@ -1,0 +1,55 @@
+
+import java.util.*;
+
+public class main {	
+	
+	
+	public static void main(String[] args) {
+	
+		int fila;
+		int contador=0, num=1;
+		int valorsolo=0;
+		String cadena; 
+		String variabletemporal = "";
+		int lugar;
+		
+		do {
+			
+			System.out.println("Que fila de los numeros de conway quieres ver: ");
+			Scanner sc=new Scanner (System.in);
+			fila = sc.nextInt();
+			
+			
+		}while (fila<=0); 
+		
+		System.out.println("La fila " + fila + " de los numeros conway: \n1 ");
+		fila --;
+		
+		for (; fila > 0; fila--) {
+			variabletemporal="";
+			cadena = Integer.toString (num);
+			
+			for (lugar = 0; lugar < cadena.length();) {
+				valorsolo=(cadena.charAt(lugar)-48);
+				contador=0;
+			}while ( valorsolo == (cadena.charAt (lugar))-48 ) {
+				lugar++;
+				contador++;
+				if (lugar>=cadena.length()) break;
+			}
+			
+			variabletemporal=variabletemporal.concat(Integer.toString(contador) + Integer.toString(lugar));
+			
+		}
+		System.out.println(variabletemporal);
+		num=Integer.parseInt(variabletemporal);
+
+		
+		
+		
+		
+		
+		
+	}
+
+}
